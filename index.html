@@ -5,6 +5,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ExpenseTracker Pro + Splitwise</title>
 <style>
+    @media (max-width: 768px) {
+  .container {
+    padding: 10px 15px;
+    max-width: 100%;
+  }
+  .dashboard {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+  .card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+  .summary-cards {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+    gap: 10px;
+  }
+  .summary-card {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+  .form-group input, .form-group select {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+  .btn {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+  }
+  .filter-controls {
+    flex-direction: column;
+  }
+  .filter-controls .form-group {
+    min-width: 100% !important;
+    width: 100%;
+  }
+  .transaction-item {
+    padding: 15px;
+  }
+}
+
     :root {
         --bg-primary: #f8f9fa;
         --bg-secondary: #ffffff;
